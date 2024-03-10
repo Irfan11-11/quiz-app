@@ -1,0 +1,155 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: "Roboto Condensed", sans-serif;
+  background:linear-gradient(0deg, #eeaeca 0.03%, #94bbe9);
+  color: #2d264b;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 0 30px;
+  height: 100vh;
+}
+
+.quiz-container{
+  width: 500px;
+  background: #ffffff;
+  border-radius: 4px;
+  margin-top: 100px;
+  padding: 30px 60px;
+}
+
+.question-no{
+  font-size: 32px;
+  font-weight: 500;
+  color: #150080;
+}
+
+.total-question{
+  font-size: 18px;
+  font-weight: 600;
+  color: #2d264b;
+}
+
+h2{
+  font-size: 20px;
+  font-weight: 500;
+  margin: 0;
+}
+
+ul{
+  margin-top: 20px;
+  margin-left: -40px;
+}
+
+li{
+  text-decoration: none;
+  list-style: none;
+  color: #2d264b;
+  font-size: 16px;
+  background: #ffffff;
+  border: 1px solid #9c9c9c;
+  border-radius: 16px;
+  padding: 11px;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+#selected-answer{
+  background: #150080;
+  order: 1px solid #d08642;
+  color: #ffffff;
+}
+
+.bottom{
+  display: flex;
+  justify-content: flex-end;
+}
+
+button{
+  background:linear-gradient(0deg, #150080 0.03%, #d08642);
+border-radius: 9px;
+font-size: 18px;
+color: #ffffff;
+padding: 10px 42px;
+outline: none;
+border: none;
+margin-top: 15px;
+cursor: not-allowed;
+
+&:disabled{
+  background-color: #ffffff;
+  color: #9c9c9c;
+  cursor: not-allowed;
+}
+
+}
+
+h3{
+  font-size: 24px;
+  letter-spacing: 1.4px;
+  text-align: center;
+}
+
+p{
+  font-size: 16px;
+  font-weight: 500;
+}
+
+span{
+  color: #150080;
+  font-size: 22px;
+}
+
+.container{
+  margin-top: 100px;
+}
+
+h1{
+  margin-bottom: -4.5rem;
+}
+
+
+@media(max-width: 500px){
+  .quiz-container{
+    width: 300px;
+    padding: 30px 60px;
+  }
+
+  h2{
+    font-size: 15px;
+    margin: 0;
+  }
+
+  .question-no{
+    font-size: 20px;
+  }
+  
+  .total-question{
+    font-size: 15px;
+  }
+
+  
+  li{
+    font-size: 13px;
+    padding: 8px;
+    margin-top: 10px;
+  }
+  
+  button{
+  font-size: 13px;
+  padding: 5px 22px;
+  margin-top: 10px;
+  }
+
+
+  }
+
